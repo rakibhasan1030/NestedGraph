@@ -12,6 +12,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -20,7 +21,7 @@ fun ScreenB() {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "ScreenB") },
+                title = { Text(text = "Screen B") },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primary,
                     titleContentColor = MaterialTheme.colorScheme.onPrimary
@@ -31,6 +32,7 @@ fun ScreenB() {
         Box(
             modifier = Modifier
                 .fillMaxSize()
+                .padding(24.dp)
                 .padding(paddingValues),
             contentAlignment = Alignment.Center
         ) {
