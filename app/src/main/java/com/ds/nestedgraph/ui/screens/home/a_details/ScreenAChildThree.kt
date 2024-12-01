@@ -40,7 +40,7 @@ fun ScreenAChildThree(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Child Two(A)") },
+                title = { Text(text = "Child Three(A)") },
                 navigationIcon = {
                     IconButton(onClick = onBackPressed) {
                         Icon(
